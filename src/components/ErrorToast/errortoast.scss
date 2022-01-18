@@ -1,0 +1,19 @@
+.error-toast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEE7E9;
+    border: 1px solid #FFB1B8;
+    border-radius: 6px;
+    width: 85vw;
+    margin: 0 auto;
+    font-family: 'Encode Sans';
+    font-weight: 400;
+
+    img {
+        padding: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}

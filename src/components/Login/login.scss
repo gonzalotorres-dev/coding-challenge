@@ -1,0 +1,86 @@
+// Variables
+$btn-default-color: #8A3879;
+$btn-hover-color: #A54F93;
+$btn-disabled-color: #78306B;
+
+.login-form {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+    padding: 2rem 2rem;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        padding: auto;
+        max-width: 60rem;
+
+        label {
+            margin-bottom: 0.2rem;
+        }
+        
+        input {
+            border: 1px solid #939393;
+            height: 2rem;
+            box-sizing: content-box;
+            border-radius: 7px;    
+        }
+
+        input:hover {
+            border: 1px solid #939393;
+        }
+
+        span {
+            color: #D42F1A;
+        }
+
+        input[type=password] {
+            background-image: url("../../img/eye-vector.png");
+            background-repeat: no-repeat;
+            background-position: 97% 50%;
+            cursor: pointer;
+        }
+
+        input[type=password]:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        font-weight: 300;
+        margin-bottom: 2rem;
+
+
+        input[type=submit]:nth-child(1) {
+            background-color: $btn-default-color;
+            border: none;
+            height: 2.5rem;
+            color: #FFFFFF;
+            border-radius: 7px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .btn:hover {
+        background: #A54F93;
+        box-shadow: 0px 0px 6px rgba(165, 79, 147, 0.85);
+    }
+
+    a {
+        text-align: center;
+        color: $btn-default-color;
+    }
+}

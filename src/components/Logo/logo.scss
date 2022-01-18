@@ -1,0 +1,23 @@
+// logo
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFFFFF;
+    
+    
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    h1{
+        font-weight: 300;
+    }
+
+    span {
+        font-weight: 600;
+    }
+}
