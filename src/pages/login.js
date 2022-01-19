@@ -8,7 +8,6 @@ function LoginPage() {
     return (
         <fragment>
             <Logo />
-            <ErrorToast />
             <BigImg />
             <Login />
         </fragment>

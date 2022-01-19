@@ -32,7 +32,8 @@ $btn-disabled-color: #78306B;
             border: 1px solid #939393;
             height: 2rem;
             box-sizing: content-box;
-            border-radius: 7px;    
+            border-radius: 7px; 
+            padding-left: 1rem;   
         }
 
         input:hover {
@@ -82,5 +83,47 @@ $btn-disabled-color: #78306B;
     a {
         text-align: center;
         color: $btn-default-color;
+    }
+}
+
+@media ( min-width: 576px){
+    .login-form {
+        
+        label {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+
+@media ( min-width: 768px ){
+
+}
+
+
+@media ( min-width: 992px ) {
+    .login-form {
+        border-radius: 0;
+        height: 25rem;
+        width: 25vw;
+        margin-left: 3.2rem;
+
+        input {
+            height: 3rem;
+        }
+    }
+}
+
+
+@media ( min-width: 1200px ) {
+    .login-form {
+        border-radius: 0;
+        height: 25rem;
+        width: 25vw;
+        margin-left: 4rem;
+
+        input {
+            height: 4rem;
+        }
     }
 }
