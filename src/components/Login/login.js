@@ -1,7 +1,12 @@
 import {React, useState} from 'react';
 import { NavLink } from "react-router-dom";
-import './login.scss';
 import ErrorToast from '../ErrorToast/errortoast';
+import EyeClosedVector from '../../img/eye-closed-vector.png';
+import EyeOpenedVector from '../../img/eye-vector.png';
+import './login.scss';
+
+
+let count= 1;   
 
 function Login() {
     //Declaro los HOOKS
@@ -11,11 +16,10 @@ function Login() {
     const [errToast, setErrToast] = useState(false);
 
     //Funcion que muestra/oculta la contraseña
-/*    const changePassView = () => {
+      const changePassView = () => {
       setPassView(!passView);
-    };*/
-
-    let count= 1;    
+    };
+ 
     
     //Funcion que verifica la cantidad de caracteres en la contraseña y el usuario.
     const triggerErrToast = () => {
@@ -32,31 +36,25 @@ function Login() {
             <form>
                 <div className="field">
                     <label htmlFor="user"> Usuario <span>*</span></label>
-                    <input 
-                        id="user" 
-                        type="text" 
-                        placeholder="Ingresá tu usuario"
-                        onChange= { e => setUser(e.target.value) }
-                    />
+                    <input id="user" type="text" placeholder="Ingresá tu usuario" onChange= { e => setUser(e.target.value) } />
                 </div>
 
                 <div className="field">
                     <label htmlFor="password"> Contraseña <span>*</span></label>
-                    <input 
-                        id="password" 
-                        type={passView ? "text" : "password" } 
-                        placeholder="Ingresá tu contraseña"
-                        onChange= { e => setPass(e.target.value) }
-                    />   
+                    <div className='visibility'>
+                        <input id="password" type={passView ? "text" : "password" } placeholder="Ingresá tu contraseña" onChange= { e => setPass(e.target.value) } />   
+                        <img src={ passView ? EyeOpenedVector : EyeClosedVector } alt='password visibility' onClick= { changePassView } />
+                    </div>
+                    
                 </div>
 
                 <div className="buttons"> 
-                    <input className='btn' type="button" value="Ingresar" onClick={ triggerErrToast }/>
+                    <input type="button" value="Ingresar" onClick={ triggerErrToast }/>
                 </div>
                 
             </form>
 
-            <NavLink to="/GetPassword" className="link">Olvidé mi contraseña</NavLink>
+            <NavLink to="/GetPassword" >Olvidé mi contraseña</NavLink>
 
         </div>
     )
