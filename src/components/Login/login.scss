@@ -10,7 +10,7 @@ $btn-disabled-color: #78306B;
     border-radius: 40px 40px 0px 0px;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    margin-top: -10rem;
 
     h2 {
         font-weight: 700;
@@ -29,7 +29,7 @@ $btn-disabled-color: #78306B;
         }
         
         input {
-            border: 1px solid #939393;
+            border: 1px solid #649FD6;
             height: 2rem;
             box-sizing: content-box;
             border-radius: 7px; 
@@ -44,14 +44,10 @@ $btn-disabled-color: #78306B;
             color: #D42F1A;
         }
 
-        input[type=password] {
-            background-image: url("../../img/eye-vector.png");
+        #password {
+            background-image: url("../../img/eye-closed-vector.png");
             background-repeat: no-repeat;
             background-position: 97% 50%;
-            cursor: pointer;
-        }
-
-        input[type=password]:hover {
             cursor: pointer;
         }
     }
@@ -64,7 +60,7 @@ $btn-disabled-color: #78306B;
         margin-bottom: 2rem;
 
 
-        input[type=submit]:nth-child(1) {
+        input[type=button]:nth-child(1) {
             background-color: $btn-default-color;
             border: none;
             height: 2.5rem;
@@ -97,7 +93,9 @@ $btn-disabled-color: #78306B;
 
 
 @media ( min-width: 768px ){
-
+    .login-form {
+        margin-top: -22rem;
+    }
 }
 
 
@@ -107,6 +105,7 @@ $btn-disabled-color: #78306B;
         height: 25rem;
         width: 25vw;
         margin-left: 3.2rem;
+        margin-top: 0;
 
         input {
             height: 3rem;

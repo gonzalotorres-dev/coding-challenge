@@ -1,14 +1,15 @@
+import { React, Fragment } from 'react';
 import Logo from "../components/Logo/logo";
 import BigImg from "../components/BigImg/bigimg";
 import GetPassword from "../components/GetPassword/getpassword";
 
 function GetPasswordPage() {
     return (
-        <fragment>
+        <Fragment>
             <Logo />
             <BigImg />
             <GetPassword />
-        </fragment>
+        </Fragment>
     )
 }
 

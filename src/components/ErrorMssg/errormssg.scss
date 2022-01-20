@@ -1,0 +1,20 @@
+$text-alert-color: #D42F1A;
+
+.alert-text-mssg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+
+    img {
+        padding-right: 0.5rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    p {
+        font-family: 'Enconde Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: $text-alert-color;
+    }
+}
